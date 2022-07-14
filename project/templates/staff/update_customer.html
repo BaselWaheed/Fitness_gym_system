@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block search %}
+<div class="heroo">
+    <form action="" method="post">{% csrf_token %}
+
+        {{form}}
+        {{Form}}
+        <div>
+            <button type="submit" class="buttonRE"> update</button>
+        </div>
+        
+    </form>
+</div>
+{% endblock search %}

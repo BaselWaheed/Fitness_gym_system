@@ -1,0 +1,49 @@
+.table1, th, td {
+	border: 1px solid whitesmoke;
+}
+
+.table1{
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 30%;
+	text-align: left;
+
+	
+}
+
+.table1 th {
+	padding: 15px;
+	color: rgb(248, 0, 0);
+
+}
+
+.table1 td {
+	padding: 15px;
+	color: white;
+	font-size: larger;
+
+}
+
+.heade {
+	margin-top: 100px;
+	color: whitesmoke;
+	size: 20px;
+
+}
+
+.bb{
+	margin: 20px;
+	color: whitesmoke;
+	size: 20px;
+	font-size: 75px;
+	position: absolute ;
+	top: 90px;
+	left: 40%;
+}
+
+.bt{
+	color: red;
+	font-weight: bold;
+	padding: 6px ;
+	
+}

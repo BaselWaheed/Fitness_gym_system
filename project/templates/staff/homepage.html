@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block contant %}
+<div class="service">
+    <div class="title">
+        <h2>Our Services</h2>
+    </div>
+
+    <div class="box">
+        {% if user.is_superuser %}
+        <div class="card">
+            <i class="fas fa-bars"></i>
+            <h5>Manager</h5>
+            <div class="pra">
+                <p style="text-align: center;">
+                    <a class="button" href="{% url 'setting' %}">setting</a>
+                </p>
+            </div>
+        </div>
+        {% endif %}
+
+
+        <div class="card"><a href="">
+            <i class="fas fa-bars"></i>
+            <h5>Customers</h5></a>
+            <div class="pra">
+                
+                <p style="text-align: center;">
+                    <a class="button" href="{% url 'add_newCustomer' %}">new</a>
+                    <a class="button" href="{% url 'Add_OldCustomer' %}">old</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <i class="far fa-user"></i>
+            <h5>{{user.username}}</h5>
+            <div class="pra">
+        
+                <p style="text-align: center;">
+                    <a class="button" href="{{ user.get_absolute_url }}">profile</a>
+                    
+                 
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <i class="far fa-bell"></i>
+            <h5>staff</h5>
+            <div class="pra">
+                <p style="text-align: center;">
+                    <a class="button" href="{% url 'customer_list' %}">management</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock contant %}

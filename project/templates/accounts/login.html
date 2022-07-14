@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block contant %}
+
+
+    <div class="heroo">
+        <h2>{{form.errors}}</h2>
+        <form action="" method="post">{% csrf_token %}
+
+
+            <label for="id_username">{{form.username.label}}</label>
+            {{form.username}}
+            
+
+            <label for="id_password1">{{form.password1.label}}</label>
+            {{form.password1}}
+            
+    
+            <div class="but">
+                <button type="submit" class="buttonRE"> login</button>
+            </div>
+        </form>
+    </div>
+
+
+{% endblock contant %}

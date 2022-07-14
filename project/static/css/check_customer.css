@@ -1,0 +1,45 @@
+  * {box-sizing: border-box;}
+  
+  .search-container {
+    padding-top: 70px;
+    text-align: center;
+  }
+  
+  #zezo{
+    padding: 6px 10px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    border: #ccc;
+  }
+  
+  .search-container button {
+    text-align: center;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 0px;
+    background:red;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background: rgb(235, 10, 10);
+  }
+
+.centerr {
+  padding-top: 30px;
+  text-align: center;
+  color: rgb(255, 19, 19);
+  
+}
+.centerr h1{
+  padding: 5px;
+}
+
+.centerr h1 span{
+  color: white;
+}

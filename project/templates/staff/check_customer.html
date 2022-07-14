@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+    
+{% block contant %}
+<div class="search-container">
+    <form method="get">
+      <input type="text"  id="zezo"  placeholder="Search.." name="search">
+      <button type="submit" class="dedo"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  
+    <div class="centerr">
+      <h1 class="centerr">
+        {{message}}
+      </h1>
+      
+      {% if booking_name %}
+      <h1>
+        <span>{{time}} </span>days left to renew
+      </h1>
+    </div>
+    
+      <table id="customers">
+        <tr>
+          <th>id number</th>
+          <th>Username</th>
+          <th>Booking start</th>
+          <th>Booking end</th>
+          <th> active</th>
+        </tr>
+        <tr>
+          <td>{{booking_name.customer.id_number}}</td>
+          <td>{{booking_name}} </td>
+          <td>{{booking_name.book_start}}</td>
+          <td>{{booking_name.book_end}}</td>
+          <td>{{active}}</td>
+        </tr>
+
+
+      </table>
+      {% else %}
+      <h1>
+        <span>0</span> days left
+      </h1>
+    </div>
+      {% endif %}
+    
+
+
+{% endblock contant %}
+
+      
+
+

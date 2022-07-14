@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+
+
+{% block contant %}
+    
+{% if object_list %}
+<table id="customers">
+    <tr>
+        <th>id number</th>
+        <th>Username</th>
+        <th>Booking start</th>
+        <th>Booking end</th>
+        <th> active</th>
+        {% if  some_data %}
+        <th>Edit/Delete</th>
+        {% else %}
+        <th>update</th>
+        {% endif %}
+
+        
+    </tr>
+    
+        
+    
+    {% for cust in object_list %}
+
+    <tr>
+        <td>{{cust.customer.id_number}}</td>
+        <td>{{cust.customer}}</td>
+        <td>{{cust.book_start}}</td>
+        <td>{{cust.book_end}}</td>
+        <td>{{cust.is_active}}</td>
+        <td>
+            <a class="boda" href="{% url 'update_customer'  cust.customer.id_number %}">Update</a>
+            {% if  some_data %}
+            Or
+            <a class="boda" href="{% url 'delete_customer'  cust.id %}"> Delete</a>
+            {% endif %}
+        </td>
+
+    </tr>
+
+    {% endfor %}
+
+    {% else %}
+    <h1 class="bedo">
+        No users are booking 
+    </h1>
+    {% endif %}
+    </table>
+
+
+
+
+          
+    
+  
+{% endblock contant %}

@@ -1,0 +1,42 @@
+.heroo{
+    text-align: center;
+    padding: 10%;
+}
+label {
+    color: rgba(255, 0, 0, 0.767);
+    font-weight: bold;
+    display: block;
+
+  }
+  label:after { content: ": " }
+
+input {
+    padding: 7px;
+    box-shadow: 3px 3px 5px grey;
+    font-size: 14px;
+    font-weight: 600;
+    width: 200px;
+}
+select{
+    padding: 3px;
+    box-shadow: 3px 3px 5px grey;
+    font-size: 14px;
+    font-weight: 600;
+    width: 200px;
+}
+.errorlist{
+    text-align: left;
+    color: darkred;
+    
+}
+button[type=submit]{
+
+    background-color:red;
+    border: none;
+    color: white;
+    padding: 16px ;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align: center;
+  }

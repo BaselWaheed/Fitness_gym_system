@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+
+{% block contant %}
+  
+        
+
+<div class="content">
+  <h2 class="bb">
+    Sett<span>ing</span> 
+  </h2>
+    <table class="table1">
+      <h3 class="heade"> Staff Member</h3>
+      <tr>
+        <th>staff name </th>
+        <th> add or edit</th>
+      </tr>
+      {% for staff in data %}
+      <tr>
+        <a href=""><td>{{staff}}</td></a>
+        <td><a href="#" class="bt">Update</a>
+          <a href="#" class="bt">Delete</a>  
+        </td>
+      </tr>
+    </table>
+
+
+  </div>
+</div>
+    
+  {% endfor %}
+{% endblock contant %}
